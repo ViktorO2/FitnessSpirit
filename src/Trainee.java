@@ -13,6 +13,19 @@ public class Trainee {
         this.yearExperience = yearExperience;
         this.programs = new ArrayList<>();
     }
+    public void update(List<TrainingProgram> programs) {
+        this.programs = new ArrayList<>(programs);
+        System.out.println("Трениращият " + name + " е уведомен за новите програми.");
+    }
+
+    public void setPrograms(List<TrainingProgram> programs) {
+        this.programs = programs;
+    }
+
+    public List<TrainingProgram> getPrograms() {
+        return programs;
+    }
+
 
     public String getName() {
         return name;
@@ -36,18 +49,5 @@ public class Trainee {
 
     public void setYearExperience(int yearExperience) {
         this.yearExperience = yearExperience;
-    }
-
-    public void update(List<TrainingProgram> programs) {
-        this.programs = programs;
-        System.out.println("Трениращият " + name + " е уведомен за новите програми.");
-    }
-
-    public void setPrograms(List<TrainingProgram> programs) {
-        this.programs = programs;
-    }
-
-    public List<TrainingProgram> getPrograms() {
-        return programs;
     }
 }

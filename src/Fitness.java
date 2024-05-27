@@ -19,12 +19,16 @@ public class Fitness {
     }
 
     public void addProgram(TrainingProgram program) {
-        programs.add(program);
-        notifyTrainees();
+        if (!programs.contains(program)) {
+            programs.add(program);
+            notifyTrainees();
+        }
     }
 
     public void attachTrainee(Trainee trainee) {
+       if(!trainees.contains(trainee)){
         trainees.add(trainee);
+       }
     }
 
     public void detachTrainee(Trainee trainee) {
@@ -36,7 +40,6 @@ public class Fitness {
             trainee.update(programs);
         }
     }
-
     public List<Trainee> getTrainees() {
         return trainees;
     }

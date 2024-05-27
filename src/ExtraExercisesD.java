@@ -15,6 +15,6 @@ public class ExtraExercisesD extends TrainingProgram {
 
     @Override
     public String getDescription() {
-        return program.getDescription() + " и " + extraExerciseDescription;
+        return  extraExerciseDescription;
     }
 }
