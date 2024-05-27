@@ -34,7 +34,7 @@ public class Main {
 
         ExercisesStrategy extraCardio = new CardioTrainee("стълби", "25", 4);
         TrainingProgram extraCardioProgram = new ExtraExercisesD(new TrainingProgram(extraCardio, "Допълнителна кардио програма"), "Допълнително стълби");
-        fitness.addProgram(extraCardioProgram);;
+        fitness.addProgram(extraCardioProgram);
 
         // Показване на информация за всички трениращи
         System.out.println("Списък на трениращите:");
